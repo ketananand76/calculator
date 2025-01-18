@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider"></span>
+        </label>
+        <p>Toggle Theme</p>
+    </div>
+
+    <div class="background">
+        <!-- SVG Character -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-character">
+            <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zM160 224h192v32H160v-32zM128 320h256v32H128v-32z" fill="#FFD700" />
+        </svg>
+    </div>
+
+    <div class="calculator">
+        <div class="display">
+            <div id="history"></div>
+            <div id="output">0</div>
+        </div>
+        <div class="buttons">
+            <button class="btn operator" data-key="clear">C</button>
+            <button class="btn operator" data-key="delete">⌫</button>
+            <button class="btn operator" data-key="%">%</button>
+            <button class="btn operator" data-key="/">÷</button>
+
+            <button class="btn" data-key="7">7</button>
+            <button class="btn" data-key="8">8</button>
+            <button class="btn" data-key="9">9</button>
+            <button class="btn operator" data-key="*">×</button>
+
+            <button class="btn" data-key="4">4</button>
+            <button class="btn" data-key="5">5</button>
+            <button class="btn" data-key="6">6</button>
+            <button class="btn operator" data-key="-">−</button>
+
+            <button class="btn" data-key="1">1</button>
+            <button class="btn" data-key="2">2</button>
+            <button class="btn" data-key="3">3</button>
+            <button class="btn operator" data-key="+">+</button>
+
+            <button class="btn" data-key="0">0</button>
+            <button class="btn" data-key=".">.</button>
+            <button class="btn equal" data-key="=">=</button>
+
+            <!-- Scientific Buttons -->
+            <button class="btn operator" data-key="sin">sin</button>
+            <button class="btn operator" data-key="cos">cos</button>
+            <button class="btn operator" data-key="tan">tan</button>
+            <button class="btn operator" data-key="log">log</button>
+
+            <button class="btn operator" data-key="√">√</button>
+            <button class="btn operator" data-key="^">x^y</button>
+            <button class="btn operator" data-key="π">π</button>
+            <button class="btn operator" data-key="e">e</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
